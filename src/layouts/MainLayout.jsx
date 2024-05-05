@@ -13,13 +13,13 @@ import { IoIosLogOut } from "react-icons/io";
 const MainLayout = () => {
   return (
     <div className="m-0 p-0">
-      <div className="bg-[image:url('./public/images/bgsmall.jpg')] bg-cover bg-center min-h-screen">
+      <div className="bg-[image:url('/images/bgsmall.jpg')] bg-cover bg-center min-h-screen">
 
         {/* <!-- Header --> */}
         
         <div className="md:flex md:justify-evenly">
             <div className="md:m-auto">
-                    <img className='flex m-auto' src='/public/images/logoblue.png'></img>
+                    <img className='flex m-auto' src='/images/logoblue.png'></img>
                 <Link to='/'>
                     <h1 className="font-medium p-1 text-center text-white font-montserrat text-[26px]">Real Estate Care</h1>
                 </Link>
