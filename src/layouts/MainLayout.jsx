@@ -36,7 +36,7 @@ const MainLayout = () => {
 
             {/* <!-- Hi Section --> */}
             <div className="mt-8 border-t-2 flex justify-evenly">
-                <p className="mt-4 p-2">Welkom  <span className="text-rec-blue font-medium">{localStorage.getItem('name')}</span>!</p>
+                <p className="mt-4 p-2">Welkom Mr  <span className="text-rec-blue font-medium">{localStorage.getItem('name')}</span>!</p>
                 {/* <p className="mt-4 flex border-2 border-rec-blue rounded-2xl p-2">Uitloggen <IoIosLogOut className=' ml-4 font-medium text-xl text-rec-blue content-center items-center' /></p> */}
                 
             </div>
