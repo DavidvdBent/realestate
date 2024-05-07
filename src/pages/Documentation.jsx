@@ -10,7 +10,7 @@ const Documentation = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const res = await fetch('/api/blogs');
+                const res = await fetch('https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/blogs');
                 const data = await res.json();
                 setAllBlogs(data);   
             } catch (error) {
