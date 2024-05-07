@@ -14,7 +14,7 @@ const Checks = () => {
     useEffect(() => {
         const fetchChecks = async () => {
             try {
-                const res = await fetch('/api/checks');
+                const res = await fetch('https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/checks');
                 const data = await res.json();
                 setAllChecks(data);   
             } catch (error) {
