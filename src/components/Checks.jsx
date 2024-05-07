@@ -14,7 +14,7 @@ const Checks = () => {
     useEffect(() => {
         const fetchChecks = async () => {
             try {
-                const res = await fetch('http://localhost:5000/checks');
+                const res = await fetch('/api/checks');
                 const data = await res.json();
                 setAllChecks(data);   
             } catch (error) {

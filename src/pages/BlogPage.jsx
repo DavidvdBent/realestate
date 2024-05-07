@@ -20,7 +20,7 @@ const BlogPage = () => {
 }
 
 const blogLoader = async ({params}) => {
-    const res = await fetch(`http://localhost:5000/blogs/${params.id}`);
+    const res = await fetch(`/api/blogs/${params.id}`);
     const data = await res.json();
     return data;
   }
