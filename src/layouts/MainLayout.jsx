@@ -4,7 +4,8 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import {Outlet} from 'react-router-dom';
 import {Link} from 'react-router-dom';
-import { IoIosLogOut } from "react-icons/io";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -33,7 +34,7 @@ const MainLayout = () => {
         <div className="text-center bg-white rounded-3xl ml-4 mr-4 p-4 mt-4 mb-4 opacity-90">
 
             <Outlet />
-
+            <ToastContainer />
             {/* <!-- Hi Section --> */}
             <div className="mt-8 border-t-2 flex justify-evenly">
                 <p className="mt-4 p-2">Welkom Mr  <span className="text-rec-blue font-medium">{localStorage.getItem('name')}</span>!</p>

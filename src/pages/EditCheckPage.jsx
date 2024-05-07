@@ -146,6 +146,7 @@ const CheckPage = ({addEditCheck}) => {
   };
 
   addEditCheck(editCheck);
+  toast.success('Check bewerkt!')
   return navigate('/PastCheckPage')
 }
 

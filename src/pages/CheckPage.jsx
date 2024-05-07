@@ -4,6 +4,7 @@ import SchadeForm from '../components/SchadeForm';
 import OnderhoudForm from '../components/OnderhoudForm';
 import InspectieForm from '../components/InspectieForm';
 import InventarisatieForm from '../components/InventarisatieForm';
+import {toast} from 'react-toastify'
 
 
 
@@ -153,6 +154,7 @@ const submitForm = (e) => {
   };
 
   addEditCheck(editCheck);
+  toast.success('Check verstuurd!')
   return navigate('/checkspage')
 }
 

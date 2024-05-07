@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
 const EditSettings = () => {
@@ -32,6 +33,7 @@ const handleForm = (e) => {
     localStorage.setItem('wachtwoord', userWachtwoord)
     localStorage.setItem('avatar', avatar)
 
+    toast.success('Instellingen bewerkt!')
     return navigate('/settings')
 }
 
