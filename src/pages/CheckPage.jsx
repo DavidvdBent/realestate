@@ -96,11 +96,11 @@ const CheckPage = ({addEditCheck}) => {
   const handleInvOpmerking = (e) => {setInvOpmerking(e.target.value);}
   const handleInvFotos = (e) => {setInvFotos(e.target.value);}
 
-  const imageHandler = (e) => {
+  const imageSchadeHandler = (e) => {
 
       const imageArray = Array.from(e.target.files).map((file) =>
       URL.createObjectURL(file))
-    
+      
       setSchadeFotos((prevImages) =>
         prevImages.concat(imageArray)
     );
@@ -204,9 +204,9 @@ const submitForm = (e) => {
         schadeAcuut = {schadeAcuut} handleSchadeAcuut = {handleSchadeAcuut}
         schadeSoort = {schadeSoort} handleSchadeSoort = {handleSchadeSoort}
         schadeOmschrijving = {schadeOmschrijving} handleSchadeOmschrijving = {handleSchadeOmschrijving}
-        schadeFotos = {schadeFotos} handleSchadeFotos = {handleSchadeFotos}
+        schadeFotos = {schadeFotos}
         schadeDatum = {schadeDatum} handleSchadeDatum = {handleSchadeDatum}
-        imageHandler = {imageHandler}
+        imageSchadeHandler = {imageSchadeHandler}
       />
         
         : <></>}

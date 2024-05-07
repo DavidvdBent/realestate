@@ -2,7 +2,7 @@ import React from 'react'
 
 const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchadeLocatie, schadeSoort, 
     handleSchadeSoort, schadeDatum, handleSchadeDatum, schadeAcuut, handleSchadeAcuut, schadeOmschrijving ,
-     handleSchadeOmschrijving, schadeFotos, handleSchadeFotos, imageHandler}) => {
+     handleSchadeOmschrijving, schadeFotos, imageSchadeHandler}) => {
 
 
   return (
@@ -44,8 +44,8 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
         
         <div className='mt-3 m-auto mb-2'>
         <h2 className='mt-2 text-center'>Foto's Toevoegen</h2>
-        <input type='file' name='schadeFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageHandler}></input>
-        <div className=' grid grid-cols-3 mt-3 gap-2'>
+        <input type='file' name='schadeFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageSchadeHandler}></input>
+        <div className=' grid grid-cols-2 mt-3 gap-2 mx-5'>
         {schadeFotos.map((image, index) => 
             <img key={index}className='"my-10 mx-5 rounded-xl flex"'
             width="200"
@@ -53,7 +53,6 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
             src={image}></img>
         )}
         </div>
-        {console.log(schadeFotos)}
         </div>
         </div>    
   )

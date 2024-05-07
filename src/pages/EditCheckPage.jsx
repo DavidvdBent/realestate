@@ -4,6 +4,7 @@ import SchadeForm from '../components/SchadeForm';
 import OnderhoudForm from '../components/OnderhoudForm';
 import InspectieForm from '../components/InspectieForm';
 import InventarisatieForm from '../components/InventarisatieForm';
+import {toast} from 'react-toastify'
 
 
 
@@ -93,8 +94,6 @@ const CheckPage = ({addEditCheck}) => {
   const handleInvActie = (e) => {setInvActie(e.target.value);}
   const handleInvOpmerking = (e) => {setInvOpmerking(e.target.value);}
   const handleInvFotos = (e) => {setInvFotos(e.target.value);}
-
-
 
 
   const submitForm = (e) => {

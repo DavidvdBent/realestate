@@ -10,6 +10,7 @@ import CheckPage, { checkLoader } from './pages/CheckPage';
 import EditCheckPage from './pages/EditCheckPage';
 import EditSettings from './pages/EditSettings';
 import Login from './pages/Login';
+import NotFound from './pages/NotFound';
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
               <Route path='/documentation' element={<Documentation/>} />
               <Route path='/settings' element={<Settings />} />
               <Route path='/edit-settings' element={<EditSettings />} />
+              <Route path='*' element={<NotFound />} />
             </Route>
 
     ), (
