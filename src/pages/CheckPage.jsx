@@ -33,21 +33,19 @@ const CheckPage = ({addEditCheck}) => {
   const handleSchadeSoort = (e) => {setSchadeSoort(e.target.value);}
   const handleSchadeDatum = (e) => {setSchadeDatum(e.target.value);}
   const handleSchadeOmschrijving = (e) => {setSchadeOmschrijving(e.target.value);}
-  const handleSchadeFotos = (e) => {setSchadeFotos(e.target.value);}
   
   
   const [onderhoudLocatie, setOnderhoudLocatie] = useState('');
   const [onderhoudAcuut, setOnderhoudAcuut] = useState('False');
   const [onderhoudSoort, setOnderhoudSoort] = useState('anders');
   const [onderhoudPrijs, setOnderhoudPrijs] = useState('0-500');
-  const [onderhoudFotos, setOnderhoudFotos] = useState('');
+  const [onderhoudFotos, setOnderhoudFotos] = useState([]);
 
   const [onderhoudGemeld, setOnderhoudGemeld] = useState(check.Onderhoud.onderhoudGemeld === true)
 
   const handleOnderhoudLocatie = (e) => {setOnderhoudLocatie(e.target.value);}
   const handleOnderhoudAcuut = (e) => {setOnderhoudAcuut(e.target.value);}
   const handleOnderhoudSoort = (e) => {setOnderhoudSoort(e.target.value);}
-  const handleOnderhoudFotos = (e) => {setOnderhoudFotos(e.target.value);}
   const handleOnderhoudPrijs = (e) => {setOnderhoudPrijs(e.target.value);}
 
   const onderhoudCheckHandler = () => {
@@ -65,7 +63,7 @@ const CheckPage = ({addEditCheck}) => {
   const [inspectieProcedure, setInspectieProcedure] = useState('');
   const [inspectieGoedgekeurd, setInspectieGoedgekeurd] = useState('True');
   const [inspectieOpmerking, setInspectieOpmerking] = useState('');
-  const [inspectieFotos, setInspectieFotos] = useState('');
+  const [inspectieFotos, setInspectieFotos] = useState([]);
 
   const handleInspectieLocatie = (e) => {setInspectieLocatie(e.target.value);}
   const handleInspectieSoort = (e) => {setInspectieSoort(e.target.value);}
@@ -73,7 +71,7 @@ const CheckPage = ({addEditCheck}) => {
   const handleInspectieProcedure = (e) => {setInspectieProcedure(e.target.value);}
   const handleInspectieGoedgekeurd = (e) => {setInspectieGoedgekeurd(e.target.value);}
   const handleInspectieOpmerking = (e) => {setInspectieOpmerking(e.target.value);}
-  const handleInspectieFotos = (e) => {setInspectieFotos(e.target.value);}
+
 
   const [inventarisatieGemeld, setInventarisatieGemeld] = useState(check.Inventarisatie.inventarisatieGemeld === true)
   const inventarisatieCheckHandler = () => {
@@ -86,7 +84,7 @@ const CheckPage = ({addEditCheck}) => {
   const [invBeschrijving, setInvBeschrijving] = useState('');
   const [invActie, setInvActie] = useState('');
   const [invOpmerking, setInvOpmerking] = useState('');
-  const [invFotos, setInvFotos] = useState('');
+  const [invFotos, setInvFotos] = useState([]);
 
   const handleInvSituatie = (e) => {setInvSituatie(e.target.value);}
   const handleInvLocatie = (e) => {setInvLocatie(e.target.value);}
@@ -94,8 +92,9 @@ const CheckPage = ({addEditCheck}) => {
   const handleInvBeschrijving = (e) => {setInvBeschrijving(e.target.value);}
   const handleInvActie = (e) => {setInvActie(e.target.value);}
   const handleInvOpmerking = (e) => {setInvOpmerking(e.target.value);}
-  const handleInvFotos = (e) => {setInvFotos(e.target.value);}
 
+
+  
   const imageSchadeHandler = (e) => {
 
       const imageArray = Array.from(e.target.files).map((file) =>
@@ -105,7 +104,33 @@ const CheckPage = ({addEditCheck}) => {
         prevImages.concat(imageArray)
     );
 }
+  const imageOnderhoudHandler = (e) => {
 
+      const imageArray = Array.from(e.target.files).map((file) =>
+      URL.createObjectURL(file))
+      
+      setOnderhoudFotos((prevImages) =>
+        prevImages.concat(imageArray)
+    );
+}
+  const imageInspectieHandler = (e) => {
+
+      const imageArray = Array.from(e.target.files).map((file) =>
+      URL.createObjectURL(file))
+      
+      setInspectieFotos((prevImages) =>
+        prevImages.concat(imageArray)
+    );
+}
+  const imageInvHandler = (e) => {
+
+      const imageArray = Array.from(e.target.files).map((file) =>
+      URL.createObjectURL(file))
+      
+      setInvFotos((prevImages) =>
+        prevImages.concat(imageArray)
+    );
+}
 const submitForm = (e) => {
   console.log(e)
   e.preventDefault();
@@ -215,7 +240,8 @@ const submitForm = (e) => {
         onderhoudSoort = {onderhoudSoort} handleOnderhoudSoort = {handleOnderhoudSoort}
         onderhoudAcuut = {onderhoudAcuut} handleOnderhoudAcuut = {handleOnderhoudAcuut}
         onderhoudPrijs = {onderhoudPrijs} handleOnderhoudPrijs = {handleOnderhoudPrijs}
-        onderhoudFotos = {onderhoudFotos} handleOnderhoudFotos = {handleOnderhoudFotos}
+        onderhoudFotos = {onderhoudFotos}
+        imageOnderhoudHandler = {imageOnderhoudHandler}
         /> : <></>}
 
         {inspectieGemeld ? <InspectieForm 
@@ -225,7 +251,8 @@ const submitForm = (e) => {
         inspectieProcedure = {inspectieProcedure} handleInspectieProcedure = {handleInspectieProcedure}
         inspectieGoedgekeurd = {inspectieGoedgekeurd} handleInspectieGoedgekeurd = {handleInspectieGoedgekeurd}
         inspectieOpmerking = {inspectieOpmerking} handleInspectieOpmerking = {handleInspectieOpmerking}
-        inspectieFotos = {inspectieFotos} handleInspectieFotos = {handleInspectieFotos}
+        inspectieFotos = {inspectieFotos}
+        imageInspectieHandler = {imageInspectieHandler}
         /> : <></>}
 
         {inventarisatieGemeld ? <InventarisatieForm 
@@ -235,7 +262,9 @@ const submitForm = (e) => {
         invBeschrijving = {invBeschrijving} handleInvBeschrijving = {handleInvBeschrijving}
         invActie = {invActie} handleInvActie = {handleInvActie}
         invOpmerking = {invOpmerking} handleInvOpmerking = {handleInvOpmerking}
-        invFotos = {invFotos} handleInvFotos = {handleInvFotos}
+        invFotos = {invFotos}
+        imageInvHandler = {imageInvHandler}
+
         /> : <></>}
 
 

@@ -7,7 +7,7 @@ const InventarisatieForm = ({
     invBeschrijving, handleInvBeschrijving,
     invActie, handleInvActie,
     invOpmerking, handleInvOpmerking,
-    invFotos, handleInvFotos
+    invFotos, imageInvHandler
 }) => {
   return (
     <div className='flex flex-col gap-y-4 border-t-2'>
@@ -43,9 +43,17 @@ const InventarisatieForm = ({
     <textarea className="border-2 w-4/5 m-auto rounded-lg h-[120px] " name='Omschrijving' value={invOpmerking} onChange={handleInvOpmerking}></textarea>
     
     <div className='mt-3 m-auto mb-2'>
-    <h2 className='mt-2 text-center'>Foto's Toevoegen</h2>
-    <input type='file' name='inspectieFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" value={invFotos} onChange={handleInvFotos}></input>
-    </div>
+              <h2 className='mt-2 text-center'>Foto's Toevoegen</h2>
+              <input type='file' name='invFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageInvHandler}></input>
+              <div className=' grid grid-cols-2 mt-3 gap-2 mx-5'>
+              {invFotos.map((image, index) => 
+                  <img key={index}className='"my-10 mx-5 rounded-xl flex"'
+                  width="200"
+                  height="200"
+                  src={image}></img>
+              )}
+              </div>
+              </div>
     </div>  
   )
 }
