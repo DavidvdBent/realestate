@@ -11,28 +11,6 @@ import EditCheckPage from './pages/EditCheckPage';
 import EditSettings from './pages/EditSettings';
 import Login from './pages/Login';
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBERKmehzzf_TOqynZRuPKtGRSMhdLtwlQ",
-  authDomain: "realestatecare-f7825.firebaseapp.com",
-  projectId: "realestatecare-f7825",
-  storageBucket: "realestatecare-f7825.appspot.com",
-  messagingSenderId: "97402122737",
-  appId: "1:97402122737:web:6a8544df918c7cc7c99450",
-  measurementId: "G-3QFTBJDGS3"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 
 const App = () => {
 
@@ -46,7 +24,7 @@ const App = () => {
     localStorage.setItem("avatar", "../public/images/userIcon.png"); 
   // Update Check
   const updateCheck = async (check) => {
-    const res = await fetch(`http://localhost:5000/checks/${check.id}`, {
+    const res = await fetch(`https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/checks/${check.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type' : 'application/json',
