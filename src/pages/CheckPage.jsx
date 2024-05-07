@@ -246,7 +246,7 @@ const submitForm = (e) => {
 }
 
 const checkLoader = async ({params}) => {
-  const res = await fetch(`http://localhost:5000/checks/${params.id}`);
+  const res = await fetch(`https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/checks/${params.id}`);
   const data = await res.json();
   return data;
 }
