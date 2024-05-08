@@ -188,6 +188,7 @@ const submitForm = (e) => {
     <h2 className="text-rec-blue text-xl font-semibold ">Check: {check.id}</h2>
     <div className='text-start mt-4 border-b-2 '>
       <p>Check ID:<span className='font-semibold'>{check.id}</span></p>
+      <p >Datum aangemeld: <span className='font-semibold'>{check.datum}</span></p>
       <p className='mb-3'>Adres: <span className='font-semibold'>{check.adres}</span></p>
     </div>
     <form className="flex flex-col gap-y-5 mt-4 mb-4 " onSubmit={submitForm}>
