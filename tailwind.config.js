@@ -11,6 +11,9 @@ export default {
       },
       colors: {
         'rec-blue': '#00AAA2'
+      },
+      screens: {
+        'xs': '450px',
       }
     },
   },
