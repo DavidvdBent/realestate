@@ -56,7 +56,7 @@ const Checks = () => {
                     <th className='px-1 py-4 border-2 border-gray-300 text-sm text-center'><abbr title='Schade'>S</abbr></th>
                     <th className='px-1 py-4 border-2 border-gray-300 text-sm text-center'><abbr title='Onderhoud'>O</abbr></th>
                     <th className='px-1 py-4 border-2 border-gray-300 text-sm text-center'><abbr title='Inspectie'>IS</abbr></th>
-                    <th className='px-1 py-4 border-2 border-gray-300 text-sm text-center'><span title="This is my explanation here.">Confusing text</span></th>
+                    <th className='px-1 py-4 border-2 border-gray-300 text-sm text-center'><span title="This is my explanation here.">IV</span></th>
                 </tr>
             </thead>
             <tbody>
