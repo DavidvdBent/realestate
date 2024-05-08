@@ -132,7 +132,6 @@ const CheckPage = ({addEditCheck}) => {
     );
 }
 const submitForm = (e) => {
-  console.log(e)
   e.preventDefault();
   const editCheck = {
       id,

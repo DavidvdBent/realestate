@@ -1,6 +1,5 @@
 import React from 'react'
-import { LuBadgeCheck} from "react-icons/lu";
-import { BsClipboard2Check} from "react-icons/bs";
+import { LuBadgeCheck, LuClipboardList} from "react-icons/lu";
 import { HiOutlineDocumentSearch } from "react-icons/hi";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { NavLink } from 'react-router-dom';
@@ -13,7 +12,7 @@ const NavBar = () => {
     <div className="flex justify-around p-1 md:items-center text-4xl md:text-5xl md:m-auto">
         {/* <NavLink to='/checks' className= {({isActive})} => isActive ? '"p-4 md:mr-10  text-white"' : '"p-4 md:mr-10  text-black'><LuBadgeCheck /></NavLink> */}
         <NavLink className={linkClass} to='/checkspage'><LuBadgeCheck/></NavLink>
-        <NavLink className={linkClass} to='/pastcheckpage'><BsClipboard2Check /></NavLink>
+        <NavLink className={linkClass} to='/pastcheckpage'><LuClipboardList /></NavLink>
         <NavLink className={linkClass} to='/documentation'><HiOutlineDocumentSearch /></NavLink>
         <NavLink className={linkClass} to='/settings'><GiSettingsKnobs /></NavLink>
     </div>

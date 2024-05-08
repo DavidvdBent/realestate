@@ -25,8 +25,6 @@ const Checks = () => {
        
     })
 
-    console.log(newSortedChecks)
-
     useEffect(() => {
         const fetchChecks = async () => {
             try {
@@ -41,10 +39,6 @@ const Checks = () => {
         }
         fetchChecks();
     }, []);
-
-    function compareDates(a, b) {
-        return a - b;
-      }
 
   return (
     <div>

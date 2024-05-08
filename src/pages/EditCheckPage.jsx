@@ -129,7 +129,6 @@ const imageInvHandler = (e) => {
 }
 
   const submitForm = (e) => {
-  console.log(e)
   e.preventDefault();
   const editCheck = {
       id,
