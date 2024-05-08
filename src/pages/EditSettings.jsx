@@ -45,7 +45,7 @@ const handleForm = (e) => {
         <p className=" text-center font-semibold text-lg mb-1">Avatar Veranderen</p>
         <input type='file' name='avatar'className='mt-4 border-2 w-4/5 m-auto ' accept=".jpg, .jpeg, .png" onChange={imageHandler}></input>
         {avatar ? (
-            <img className='w-40 h-40 m-auto object-cover' src={avatar}></img>):<></>}
+            <img className='w-40 h-40 m-auto object-cover mt-4 rounded' src={avatar}></img>):<></>}
         </div>
 
         <label className=" text-center font-semibold text-lg mb-1" >Naam Veranderen</label>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
-import { CiEdit } from "react-icons/ci";
+import { FaEdit } from "react-icons/fa";
+
 
 const Checks = () => {
     const [allChecks, setAllChecks] = useState([]);
@@ -39,8 +40,8 @@ const Checks = () => {
         {oldChecks.map((check, index) => (
                 <tr key={index} className='odd:bg-white even:bg-slate-200 border-2 border-gray-300'>
                     <th className='px-3 py-4 border-2 border-gray-300'>{check.id}</th>
-                    <td className='px-3 py-4 border-2 border-gray-300'>{check.adres}</td>
-                    <td className='px-1 py-4 border-2 border-gray-300 text-rec-blue text-2xl' ><Link to= {`/edit-checks/${check.id}`}><CiEdit className='m-auto'/></Link></td>
+                    <td className='px-3 py-4 border-2 border-gray-300'><Link to= {`/edit-checks/${check.id}`}>{check.adres}</Link></td>
+                    <td className='px-1 py-4 border-2 border-gray-300 text-rec-blue text-xl' ><Link to= {`/edit-checks/${check.id}`}><FaEdit className='m-auto' /></Link></td>
                 </tr>
         ))}
         

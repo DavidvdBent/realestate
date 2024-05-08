@@ -48,7 +48,7 @@ const InspectieForm = ({inspectieLocatie, handleInspectieLocatie,
         <input type='file' name='inspectieFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageInspectieHandler}></input>
         <div className=' grid grid-cols-2 mt-3 gap-2 mx-5'>
         {inspectieFotos.map((image, index) => 
-            <img key={index}className='"my-10 mx-5 rounded-xl flex"'
+            <img key={index}className='my-2 rounded-xl'
             width="200"
             height="200"
             src={image}></img>

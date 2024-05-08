@@ -34,9 +34,9 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
             <h2 className='mt-2 text-center'>Acute actie vereist</h2>
             <div className='flex mt-2'>
             <input type ='radio' name='Acuut' className='mr-2' value='True' checked={schadeAcuut === "True"} onChange={handleSchadeAcuut}></input>
-            <label className='mr-4'>Ja</label>
+            <label className='mr-4' htmlFor='Acuut'>Ja</label>
             <input type ='radio' name='Acuut' className='mr-2' value='False' checked={schadeAcuut === "False"} onChange={handleSchadeAcuut}></input>
-            <label>Nee</label>
+            <label htmlFor='Acuut'>Nee</label>
             </div>
         </div>
         <label className=" font-medium" htmlFor='Omschrijving' >Omschrijving</label>
@@ -45,13 +45,16 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
         <div className='mt-3 m-auto mb-2'>
         <h2 className='mt-2 text-center'>Foto's Toevoegen</h2>
         <input type='file' name='schadeFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageSchadeHandler}></input>
+        <div>
+
         <div className=' grid grid-cols-2 mt-3 gap-2 mx-5'>
         {schadeFotos.map((image, index) => 
-            <img key={index}className='"my-10 mx-5 rounded-xl flex"'
+            <img key={index}className='my-2 rounded-xl'
             width="200"
             height="200"
             src={image}></img>
         )}
+        </div>
         </div>
         </div>
         </div>    

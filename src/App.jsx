@@ -1,4 +1,4 @@
-import {Route, Routes, BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider, json} from 'react-router-dom'
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider, json} from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import MainLayout from './layouts/MainLayout';
 import Documentation from './pages/Documentation';
@@ -16,14 +16,15 @@ import NotFound from './pages/NotFound';
 const App = () => {
 
 
-    // Testing Local Storage
+    // Setting up Local Storage
     localStorage.setItem("name", "John Doe");  
     localStorage.setItem("email", "johndoe@gmail.com"); 
     localStorage.setItem("wachtwoord", "Johnspassword"); 
     localStorage.setItem("melding", "uit"); 
     localStorage.setItem("modus", "licht"); 
-    localStorage.setItem("avatar", "../public/images/userIcon.png"); 
-  // Update Check
+    localStorage.setItem("avatar", "/images/userIcon.png"); 
+
+  // Update Check to database
   const updateCheck = async (check) => {
     const res = await fetch(`https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/checks/${check.id}`, {
       method: 'PUT',
