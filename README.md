@@ -1,8 +1,6 @@
-# React + Vite
+# Real Estate Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+De applicatie is gemaakt voor inspecteurs voor Real Estate Care.
+In deze app kunnen ze checks starten,invoeren en opsturen zodat deze kunnen toegevoegd aan de reeds bestaande backend.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In de app kan je naast nieuwe checks uitvoeren ook oude checks (inspecties) bewerken, documentatie bekijken en de instellingen van jouw (de inspecteur) aanpassen.
