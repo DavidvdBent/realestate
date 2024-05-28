@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <Link to='/'><h3 className="ml-2 mt-6 text-rec-blue text-center text-xl  font-montserrat"> Real Estate Care</h3></Link>
+        <Link to='/'><h3 className="ml-2 mt-6 text-rec-blue text-center text-xl  font-montserrat"> Real Estate Cares</h3></Link>
     </div>
   )
 }
