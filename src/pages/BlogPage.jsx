@@ -8,7 +8,7 @@ const BlogPage = () => {
     <div>
         <h2 className="text-rec-blue text-xl font-semibold ">Documentatie</h2>
         <div className='w-3/4 m-auto mt-6 '>
-            <img src={blog.img} alt='' className='rounded-2xl m-auto'></img>
+            <img src={blog.img} alt='' className='rounded-2xl m-auto object-cover'></img>
         </div>
         <h3 className='text-xl font-semibold mt-6'>{blog.titel}</h3>
         <div className='text-start w-5/6 m-auto mt-6 border-t-2'>
