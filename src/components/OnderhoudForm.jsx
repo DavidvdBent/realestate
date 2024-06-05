@@ -5,7 +5,8 @@ const OnderhoudForm = ({
   onderhoudSoort, handleOnderhoudSoort,
   onderhoudAcuut, handleOnderhoudAcuut,
   onderhoudPrijs, handleOnderhoudPrijs,
-  onderhoudFotos, imageOnderhoudHandler
+  onderhoudFotos, imageOnderhoudHandler,
+  removeOnderhoudImage
 }) => {
 
   return (
@@ -45,7 +46,9 @@ const OnderhoudForm = ({
                  <img key={index}className='my-2 rounded-xl'
                  width="200"
                  height="200"
-                 src={image}></img>
+                 src={image}
+                 onClick={() => removeOnderhoudImage(image)}
+                 ></img>
               )}
               </div>
               </div>

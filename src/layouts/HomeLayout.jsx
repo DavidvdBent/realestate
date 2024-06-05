@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import {Outlet} from 'react-router-dom';
 import {Link} from 'react-router-dom';
@@ -18,14 +17,10 @@ const MainLayout = () => {
         {/* <!-- Header --> */}
         
         <div className="md:flex md:justify-evenly">
-            <Link to='/' className="md:m-auto">
+        <Link to='/' className="md:m-auto">
                     <img className='flex m-auto' src='/images/logoblue.png'></img>
                     <h1 className="font-medium p-1 text-center text-white font-montserrat text-[26px] hover:text-gray-300">Real Estate Care</h1>
             </Link>
-            
-            {/* <!-- <path  className= 'm-auto mt-6' d="./images/logo REC1 1.svg"></path> -->
-            <!-- NavBar --> */}
-            <NavBar/>
         </div>
 
         <div className="text-center bg-white rounded-3xl ml-4 mr-4 p-4 mt-4 mb-4 opacity-90">

@@ -1,27 +1,31 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { GoDotFill } from "react-icons/go";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { LuBadgeCheck, LuClipboardList} from "react-icons/lu";
+import { HiOutlineDocumentSearch } from "react-icons/hi";
+import { GiSettingsKnobs } from "react-icons/gi";
 
 
 
 const HomePage = () => {
   return (
         <>
-            <div>
-                <h2 className="text-rec-blue text-xl font-semibold font-montserrat">Home</h2>
-            </div>
-            <div className="p-4 flex mt-4 items-center">
-                <GoDotFill className='fa-solid fa-circle text-sm text-rec-blue mr-4'/><Link to='/checkspage'><p> 4 actuele check-ups</p></Link>
-            </div>
-            <div className="p-4 flex items-center">
-            <GoDotFill className='fa-solid fa-circle text-sm text-rec-blue mr-4'/><Link to='/pastcheckpage'><p> Dossiers Inzien</p></Link>
-            </div>
-            <div className="p-4 flex items-center"> 
-            <GoDotFill className='fa-solid fa-circle text-sm text-rec-blue mr-4'/><Link to='/documentation'><p> Kennisbank</p></Link>
-            </div>
-            <div className="p-4 flex mb-4 items-center"> 
-            <GoDotFill className='fa-solid fa-circle text-sm text-rec-blue mr-4'/><Link to='/settings'><p> Instellingen bewerken</p></Link>
+            <div className="grid grid-cols-2 text-8xl gap-2">
+                <Link to='/app/inspecties' className='border-2 border-gray-200  p-6 rounded-2xl text-gray-700 mb-2 mt-4 shadow-lg w-full flex flex-col items-center  hover:border-gray-300 duration-25'>
+                    <LuBadgeCheck/>
+                    <p className='text-sm'>Toegewezen</p>
+                </Link>
+                <Link to='/app/oude-inspecties' className='border-2 border-gray-200  p-6 rounded-2xl text-gray-700 mb-2 mt-4 shadow-lg w-full flex flex-col items-center hover:border-gray-300 duration-25'>
+                    <LuClipboardList />
+                    <p className='text-sm'>Uitgevoerd</p>
+                </Link>
+                <Link to='/app/kennisbank' className='border-2 border-gray-200  p-6 rounded-2xl text-gray-700 mb-2 shadow-lg w-full flex flex-col items-center hover:border-gray-300 duration-25'>
+                    <HiOutlineDocumentSearch />
+                    <p className='text-sm'>Kennisbank</p>
+                </Link>
+                <Link to='/app/settings' className='border-2 border-gray-200  p-6 rounded-2xl text-gray-700 mb-2 shadow-lg w-full flex flex-col items-center hover:border-gray-300 duration-25'>
+                    <GiSettingsKnobs />
+                    <p className='text-sm'>Instellingen</p>
+                </Link>
             </div>
         </>
   )

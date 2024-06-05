@@ -2,9 +2,7 @@ import React from 'react'
 
 const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchadeLocatie, schadeSoort, 
     handleSchadeSoort, schadeDatum, handleSchadeDatum, schadeAcuut, handleSchadeAcuut, schadeOmschrijving ,
-     handleSchadeOmschrijving, schadeFotos, imageSchadeHandler}) => {
-
-
+     handleSchadeOmschrijving, schadeFotos, imageSchadeHandler, removeSchadeImage}) => {
   return (
     <div className='flex flex-col gap-y-4 border-t-2'>
         <h3 className='mt-3 font-semibold'>Schade</h3>
@@ -17,8 +15,6 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
             </div>
         <label className=" font-medium" >Locatie</label>
         <input type="text" className="border-2  h-10 w-2/3 m-auto rounded-lg" name='Locatie' value={schadeLocatie} onChange={handleSchadeLocatie}></input>
-        <div className='mt-3 m-auto mb-4'>
-        </div>
         <label htmlFor="Soort">Soort Schade</label>
         <select name="Soort" value={schadeSoort} onChange={handleSchadeSoort} id="Soort" className="border-2  h-10 w-2/3 m-auto rounded-lg">
             <option value="moedwillig" >Moedwillig</option>
@@ -52,7 +48,8 @@ const SchadeForm = ({schadeNieuw, handleSchadeNieuw, schadeLocatie, handleSchade
             <img key={index}className='my-2 rounded-xl'
             width="200"
             height="200"
-            src={image}></img>
+            src={image}
+            onClick={() => removeSchadeImage(image)}></img>
         )}
         </div>
         </div>

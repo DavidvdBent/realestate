@@ -7,7 +7,8 @@ const InventarisatieForm = ({
     invBeschrijving, handleInvBeschrijving,
     invActie, handleInvActie,
     invOpmerking, handleInvOpmerking,
-    invFotos, imageInvHandler
+    invFotos, imageInvHandler,
+    removeInvImage
 }) => {
   return (
     <div className='flex flex-col gap-y-4 border-t-2'>
@@ -15,7 +16,7 @@ const InventarisatieForm = ({
 
     <div className='mt-3 m-auto mb-2'>
     <h2 className='mt-2 text-center'>Situatie</h2>
-    <input type='file' name='situatie'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".pdf" value={invSituatie} onChange={handleInvSituatie}></input>
+    <input type='file' name='situatie'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' accept=".pdf" onChange={handleInvSituatie}></input>
     </div>
 
     <label className=" font-medium" >Locatie</label>
@@ -50,7 +51,8 @@ const InventarisatieForm = ({
                   <img key={index}className='my-2 rounded-xl'
                   width="200"
                   height="200"
-                  src={image}></img>
+                  src={image}
+                  onClick={() => removeInvImage(image)}></img>
               )}
               </div>
               </div>

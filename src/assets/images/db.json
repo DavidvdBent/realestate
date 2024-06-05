@@ -1,0 +1,250 @@
+{
+    "checks": [
+      {
+        "id": "1",
+        "adres": "van Dijkstraat 130, 2242HJ",
+        "datum": "2024-02-03",
+        "nieuw": true,
+        "Schade": {
+          "schadeGemeld": false,
+          "schadeNieuw": "",
+          "schadeLocatie": "",
+          "schadeSoort": "",
+          "schadeDatum": "",
+          "schadeAcuut": "",
+          "schadeOmschrijving": "",
+          "schadeFotos": ""
+        },
+        "Onderhoud": {
+          "onderhoudGemeld": false,
+          "onderhoudLocatie": "",
+          "onderhoudSoort": "",
+          "onderhoudAcuut": "",
+          "onderhoudPrijs": "",
+          "onderhoudFotos": ""
+        },
+        "Inspectie": {
+          "inspectieGemeld": true,
+          "inspectieLocatie": "",
+          "inspectieSoort": "",
+          "inspectieStoring": "",
+          "inspectieProcedure": "",
+          "inspectieGoedgekeurd": "",
+          "inspectieOpmerking": "",
+          "inspectieFotos": ""
+        },
+        "Inventarisatie": {
+          "inventarisatieGemeld": false,
+          "invSituatie": "",
+          "invLocatie": "aa",
+          "invUitvoerder": "",
+          "invBeschrijving": "",
+          "invActie": "",
+          "invOpmerking": "",
+          "invFotos": ""
+        }
+      },
+      {
+        "id": "2",
+        "nieuw": true,
+        "adres": "Langeweg 2B, 4622DY",
+        "datum": "2024-05-06",
+        "Schade": {
+          "schadeGemeld": false,
+          "schadeNieuw": "False",
+          "schadeLocatie": "",
+          "schadeSoort": "normaal gebruik",
+          "schadeDatum": "",
+          "schadeAcuut": "False",
+          "schadeOmschrijving": "lange weg schade",
+          "schadeFotos": ""
+        },
+        "Onderhoud": {
+          "onderhoudGemeld": true,
+          "onderhoudLocatie": "",
+          "onderhoudSoort": "",
+          "onderhoudAcuut": "",
+          "onderhoudPrijs": "",
+          "onderhoudFotos": ""
+        },
+        "Inspectie": {
+          "inspectieGemeld": false,
+          "inspectieLocatie": "",
+          "inspectieSoort": "",
+          "inspectieStoring": "",
+          "inspectieProcedure": "",
+          "inspectieGoedgekeurd": "",
+          "inspectieOpmerking": "",
+          "inspectiefotos": ""
+        },
+        "Inventarisatie": {
+          "invGemeld": true,
+          "invSituatie": "",
+          "invLocatie": "",
+          "invUitvoerder": "",
+          "invBeschrijving": "",
+          "invActie": "",
+          "invOpmerking": "",
+          "invFotos": ""
+        }
+      },
+      {
+        "id": "3",
+        "nieuw": true,
+        "adres": "Hoofdstraat 200C, 1020RR",
+        "datum": "2024-05-03",
+        "Schade": {
+          "schadeGemeld": true,
+          "schadeNieuw": "",
+          "schadeLocatie": "",
+          "schadeSoort": "",
+          "schadeDatum": "",
+          "schadeAcuut": "",
+          "schadeOmschrijving": ""
+        },
+        "Onderhoud": {
+          "onderhoudGemeld": true,
+          "onderhoudLocatie": "",
+          "onderhoudSoort": "",
+          "onderhoudAcuut": "",
+          "onderhoudPrijs": "",
+          "onderhoudFotos": ""
+        },
+        "Inspectie": {
+          "inspectieGemeld": true,
+          "inspectieLocatie": "",
+          "inspectieSoort": "",
+          "inspectieStoring": "",
+          "inspectieProcedure": "",
+          "inspectieGoedgekeurd": "",
+          "inspectieOpmerking": "",
+          "inspectiefotos": ""
+        },
+        "Inventarisatie": {
+          "invGemeld": true,
+          "invSituatie": "",
+          "invLocatie": "",
+          "invUitvoerder": "",
+          "invBeschrijving": "",
+          "invActie": "",
+          "invOpmerking": "",
+          "invFotos": ""
+        }
+      }, {
+        "id": "4",
+        "adres": "Braamweg 40, 7209AK",
+        "datum": "2024-04-20",
+        "nieuw": false,
+        "Schade": {
+          "schadeGemeld": false,
+          "schadeNieuw": "",
+          "schadeLocatie": "",
+          "schadeSoort": "",
+          "schadeDatum": "",
+          "schadeAcuut": "",
+          "schadeOmschrijving": ""
+        },
+        "Onderhoud": {
+          "onderhoudGemeld": true,
+          "onderhoudLocatie": "trede",
+          "onderhoudSoort": "houtrot",
+          "onderhoudAcuut": "True",
+          "onderhoudPrijs": "1500+",
+          "onderhoudFotos": ""
+        },
+        "Inspectie": {
+          "inspectieGemeld": true,
+          "inspectieLocatie": "trap",
+          "inspectieSoort": "verwarming",
+          "inspectieStoring": "te  koel onder trap",
+          "inspectieProcedure": "",
+          "inspectieGoedgekeurd": "False",
+          "inspectieOpmerking": "wachten op goedkeuring",
+          "inspectieFotos": ""
+        },
+        "Inventarisatie": {
+          "inventarisatieGemeld": true,
+          "invSituatie": "",
+          "invLocatie": "Trap",
+          "invUitvoerder": "aanemer",
+          "invBeschrijving": "trap maken",
+          "invActie": "keuren",
+          "invOpmerking": "keur op acceptatie",
+          "invFotos": ""
+        }
+      }, {
+        "id": "5",
+        "adres": "Parklaan 10b",
+        "datum": "2024-04-10",
+        "nieuw": false,
+        "Schade": {
+          "schadeGemeld": false,
+          "schadeNieuw": "",
+          "schadeLocatie": "",
+          "schadeSoort": "",
+          "schadeDatum": "",
+          "schadeAcuut": "",
+          "schadeOmschrijving": ""
+        },
+        "Onderhoud": {
+          "onderhoudGemeld": false,
+          "onderhoudLocatie": "",
+          "onderhoudSoort": "",
+          "onderhoudAcuut": "",
+          "onderhoudPrijs": "",
+          "onderhoudFotos": ""
+        },
+        "Inspectie": {
+          "inspectieGemeld": true,
+          "inspectieLocatie": "trap",
+          "inspectieSoort": "verwarming",
+          "inspectieStoring": "te  koel onder trap",
+          "inspectieProcedure": "",
+          "inspectieGoedgekeurd": "False",
+          "inspectieOpmerking": "wachten op goedkeuring",
+          "inspectieFotos": ""
+        },
+        "Inventarisatie": {
+          "inventarisatieGemeld": false,
+          "invSituatie": "",
+          "invLocatie": "",
+          "invUitvoerder": "",
+          "invBeschrijving": "",
+          "invActie": "",
+          "invOpmerking": "",
+          "invFotos": ""
+        }
+      }
+    ],
+    "blogs": [
+      {
+          "id" : "1",
+          "titel" : "Wet woekerhuur",
+          "img" : "\\images\\blog\\blog1.png",
+          "content" : "Er komt mogelijk een limiet aan woekerhuren in de vrije sector. In de Tweede Kamer lijkt zich een meerderheid af te tekenen voor de"
+  
+      },
+      {
+          "id" : "2",
+          "titel" : "Brandveiligheid van nieuwe Woningen",
+          "img" : "\\images\\blog\\blog2.png",
+          "content" : "Risico’s afwegen en beperken en nieuwe kennis vergaren. Uit het onderzoek komen de volgende lessen en oplossingsrichtingen naar voren:1. Zorgvuldig "
+  
+      },
+      {
+          "id" : "3",
+          "titel" : "Cv Ketel Vervangen",
+          "img" : "\\images\\blog\\blog3.png",
+          "content" : "Vanaf 2026 moet iedereen bij vervanging van de cv-ketel overstappen op een duurzamer alternatief. In veel gevallen is dit een cv-ketel in combinatie met een hybride warmtepomp."
+  
+      },
+      {
+          "id" : "4",
+          "titel" : "Rechten van de huurder",
+          "img" : "\\images\\blog\\blog4.png",
+          "content" : "Rechten en plichten huurder en verhuurder Zodra je een huurovereenkomst met de verhuurder hebt getekend, gelden er voor beide partijen rechten en plichten. Deze zullen wij hieronder kort uiteenzetten. Ongeacht wat je gaat huren: voor zowel de huurder als de verhuurder zijn er basisverplichtingen. "
+  
+      }
+  
+  ]
+  }

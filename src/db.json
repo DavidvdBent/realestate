@@ -1,0 +1,225 @@
+{
+  "inspecties": [
+    {
+      "id": "1",
+      "adres": "van Dijkstraat 130, 2242HJ",
+      "datum": "2024-02-03",
+      "nieuw": false,
+      "Schade": {
+        "schadeGemeld": true,
+        "schadeNieuw": "True",
+        "schadeLocatie": "Trap",
+        "schadeSoort": "slijtage",
+        "schadeDatum": "2024-05-31",
+        "schadeAcuut": "True",
+        "schadeOmschrijving": "Trapleuning is kapot. Dit komt waarschijnlijk door veel gebruik en een niet goed onderhouden trappenhuis ",
+        "schadeFotos": [
+          "\\inspecties\\hefk1.jpg",
+          "\\inspecties\\hefk3.jpg",
+          "\\inspecties\\hefk2.jpg"
+        ]
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": false,
+        "onderhoudLocatie": "",
+        "onderhoudSoort": "anders",
+        "onderhoudAcuut": "False",
+        "onderhoudPrijs": "0-500",
+        "onderhoudFotos": []
+      },
+      "Inspectie": {
+        "inspectieGemeld": false,
+        "inspectieLocatie": "",
+        "inspectieSoort": "anders",
+        "inspectieStoring": "",
+        "inspectieProcedure": "\\inspecties\\technis.pdf",
+        "inspectieGoedgekeurd": "True",
+        "inspectieOpmerking": "",
+        "inspectieFotos": []
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": false,
+        "invSituatie": "",
+        "invLocatie": "",
+        "invUitvoerder": "",
+        "invBeschrijving": "",
+        "invActie": "",
+        "invOpmerking": "",
+        "invFotos": []
+      }
+    },
+    {
+      "id": "2",
+      "nieuw": false,
+      "adres": "Langeweg 2B, 4622DY",
+      "datum": "2024-05-06",
+      "Schade": {
+        "schadeGemeld": false,
+        "schadeNieuw": "True",
+        "schadeLocatie": "",
+        "schadeSoort": "calamiteit",
+        "schadeDatum": "",
+        "schadeAcuut": "True",
+        "schadeOmschrijving": "",
+        "schadeFotos": []
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": true,
+        "onderhoudLocatie": "Lift",
+        "onderhoudSoort": "elektra",
+        "onderhoudAcuut": "False",
+        "onderhoudPrijs": "1500+",
+        "onderhoudFotos": [
+          "\\inspecties\\hefk1.jpg",
+          "\\inspecties\\hefk2.jpg"
+        ]
+      },
+      "Inspectie": {
+        "inspectieGemeld": true,
+        "inspectieLocatie": "Lift",
+        "inspectieSoort": "anders",
+        "inspectieStoring": "Lift functioneerd niet meer.",
+        "inspectieProcedure": "\\inspecties\\inspec.pdf",
+        "inspectieGoedgekeurd": "True",
+        "inspectieOpmerking": "Dit komt door een kapotte control board van de lift. Andere lift nog wel in gebruik. ",
+        "inspectieFotos": [
+          "\\inspecties\\hefk3.jpg",
+          "\\inspecties\\hefk2.jpg"
+        ]
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": false,
+        "invSituatie": "",
+        "invLocatie": "",
+        "invUitvoerder": "",
+        "invBeschrijving": "",
+        "invActie": "",
+        "invOpmerking": "",
+        "invFotos": []
+      }
+    },
+    {
+      "id": "3",
+      "nieuw": false,
+      "adres": "Hoofdstraat 200C, 1020RR",
+      "datum": "2024-05-03",
+      "Schade": {
+        "schadeGemeld": false,
+        "schadeNieuw": "False",
+        "schadeLocatie": "",
+        "schadeSoort": "normaal gebruik",
+        "schadeDatum": "",
+        "schadeAcuut": "False",
+        "schadeOmschrijving": "",
+        "schadeFotos": []
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": false,
+        "onderhoudLocatie": "",
+        "onderhoudSoort": "anders",
+        "onderhoudAcuut": "False",
+        "onderhoudPrijs": "0-500",
+        "onderhoudFotos": []
+      },
+      "Inspectie": {
+        "inspectieGemeld": false,
+        "inspectieLocatie": "",
+        "inspectieSoort": "anders",
+        "inspectieStoring": "",
+        "inspectieProcedure": "",
+        "inspectieGoedgekeurd": "True",
+        "inspectieOpmerking": "",
+        "inspectieFotos": []
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": true,
+        "invSituatie": "\\inspecties\\technis.pdf",
+        "invLocatie": "Voordeur Hoofdpand",
+        "invUitvoerder": "aanemer",
+        "invBeschrijving": "Slot moest vervangen worden omdat het pand van eigenaar is verwisseld.",
+        "invActie": "accepteren",
+        "invOpmerking": "Aannemer heeft toegezegd dit binnen 5 werkdagen te regelen.",
+        "invFotos": []
+      }
+    },
+    {
+      "id": "4",
+      "adres": "Braamweg 40, 7209AK",
+      "datum": "2024-04-20",
+      "nieuw": true,
+      "Schade": {
+        "schadeGemeld": true
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": true
+      },
+      "Inspectie": {
+        "inspectieGemeld": false
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": false
+      }
+    },
+    {
+      "id": "5",
+      "adres": "Parklaan 10b",
+      "datum": "2024-04-10",
+      "nieuw": true,
+      "Schade": {
+        "schadeGemeld": false
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": false
+      },
+      "Inspectie": {
+        "inspectieGemeld": true
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": false
+      }
+    },{
+      "id": "6",
+      "adres": "Hogeveen 40, 2109AK",
+      "datum": "2024-04-22",
+      "nieuw": true,
+      "Schade": {
+        "schadeGemeld": false
+      },
+      "Onderhoud": {
+        "onderhoudGemeld": true
+      },
+      "Inspectie": {
+        "inspectieGemeld": false
+      },
+      "Inventarisatie": {
+        "inventarisatieGemeld": true
+      }
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "titel": "Wet woekerhuur",
+      "img": "\\images\\blog\\blog1.png",
+      "content": "Er komt mogelijk een limiet aan woekerhuren in de vrije sector. In de Tweede Kamer lijkt zich een meerderheid af te tekenen voor de"
+    },
+    {
+      "id": "2",
+      "titel": "Brandveiligheid van nieuwe Woningen",
+      "img": "\\images\\blog\\blog2.png",
+      "content": "Risico’s afwegen en beperken en nieuwe kennis vergaren. Uit het onderzoek komen de volgende lessen en oplossingsrichtingen naar voren:1. Zorgvuldig "
+    },
+    {
+      "id": "3",
+      "titel": "Cv Ketel Vervangen",
+      "img": "\\images\\blog\\blog3.png",
+      "content": "Vanaf 2026 moet iedereen bij vervanging van de cv-ketel overstappen op een duurzamer alternatief. In veel gevallen is dit een cv-ketel in combinatie met een hybride warmtepomp."
+    },
+    {
+      "id": "4",
+      "titel": "Rechten van de huurder",
+      "img": "\\images\\blog\\blog4.png",
+      "content": "Rechten en plichten huurder en verhuurder Zodra je een huurovereenkomst met de verhuurder hebt getekend, gelden er voor beide partijen rechten en plichten. Deze zullen wij hieronder kort uiteenzetten. Ongeacht wat je gaat huren: voor zowel de huurder als de verhuurder zijn er basisverplichtingen. "
+    }
+  ]
+}
