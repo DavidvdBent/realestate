@@ -7,7 +7,7 @@ const SettingsPage = () => {
       <div>
         <h2 className="text-rec-blue text-xl font-semibold">Settings</h2>
         <div className='mb-6 mt-6'>
-          <img className='w-40 h-40 m-auto' src='/images/userIcon.png'></img>
+          <img className='w-40 h-40 m-auto' src={localStorage.getItem('avatar')}></img>
             <p className=" text-center italic text-lg">{localStorage.getItem('name')}</p>
         </div>
         <div>

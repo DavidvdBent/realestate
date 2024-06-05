@@ -25,7 +25,7 @@ const InspectieForm = ({inspectieLocatie, handleInspectieLocatie,
             <option value="anders" >Anders</option>
         </select>
         <label className=" font-medium" htmlFor='Storing' >Gemelde Storing</label>
-        <textarea className="border-2 w-4/5 m-auto rounded-lg h-[120px] " name='Storing' value={inspectieStoring} onChange={handleInspectieStoring}></textarea>
+        <textarea className='mt-4 border-2 w-4/5 m-auto' name='Storing' value={inspectieStoring} onChange={handleInspectieStoring}></textarea>
 
         <div className='mt-3 m-auto mb-2'>
         <h2 className='mt-2 text-center'>Tekstprocedure</h2>
@@ -46,7 +46,7 @@ const InspectieForm = ({inspectieLocatie, handleInspectieLocatie,
         
         <div className='mt-3 m-auto mb-2'>
         <h2 className='mt-2 text-center'>Foto's Toevoegen</h2>
-        <input type='file' name='inspectieFotos'className='mt-4 border-2 w-4/5 m-auto rounded-lg h-[120px] border-rec-blue bg-gray-300' multiple accept=".jpg, .jpeg, .png" onChange={imageInspectieHandler}></input>
+        <input type='file' name='inspectieFotos' className='mt-4 border-2 w-4/5 m-auto'  multiple accept=".jpg, .jpeg, .png" onChange={imageInspectieHandler}></input>
         <div className=' grid grid-cols-2 mt-3 gap-2 mx-5'>
         {inspectieFotos.map((image, index) => 
             <img key={index}className='my-2 rounded-xl'

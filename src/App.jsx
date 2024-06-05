@@ -29,7 +29,7 @@ const App = () => {
     localStorage.setItem("2fa", true); 
     localStorage.setItem("tfa-code", 4224);
     localStorage.setItem("modus", "licht"); 
-    localStorage.setItem("avatar", "/images/userIcon.png"); 
+    localStorage.setItem("avatar", "/images/inspecteur.jpg"); 
   
   const routesJSX = [
     (
