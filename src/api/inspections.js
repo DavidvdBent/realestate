@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function getNewInspections () {
     return axios
-        .get('http://localhost:5000/inspecties').then(res => {
+        .get('https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/inspecties').then(res => {
             // Only New Inspections
             res.data = res.data.filter((inspectie) => inspectie.nieuw === true)
             // Sort by Date (Old First)
@@ -22,7 +22,7 @@ export function getNewInspections () {
 }
 export function getOldInspections () {
     return axios
-        .get('http://localhost:5000/inspecties').then(res => {
+        .get('https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/inspecties').then(res => {
             // Only Old Inspections
             res.data = res.data.filter((inspectie) => inspectie.nieuw === false)
             // Sort by Date (New First)
@@ -41,15 +41,15 @@ export function getOldInspections () {
 }
 export function getInspection (id) {
   return axios
-    .get(`http://localhost:5000/inspecties/${id}`).then(res => res.data)    
+    .get(`https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/inspecties/${id}`).then(res => res.data)    
 }
 
 export function editInspection (editInspectie) {
   return axios
-    .patch(`http://localhost:5000/inspecties/${editInspectie.id}`, editInspectie) 
+    .patch(`https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/inspecties/${editInspectie.id}`, editInspectie) 
 }
 
 export function getAllInspections () {
   return axios
-        .get('http://localhost:5000/inspecties').then(res => res.data )
+        .get('https://my-json-server.typicode.com/DavidvdBent/realestatedatabase/inspecties').then(res => res.data )
 }
