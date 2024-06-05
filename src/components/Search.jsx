@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Search = ({ onChangeCallback }) => {
-const [query, setQuery] = useState('')
+  const [query, setQuery] = useState('')
 
   const handleSearch = (e) => {
     const inputValue = e.target.value;

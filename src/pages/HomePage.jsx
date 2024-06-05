@@ -1,12 +1,20 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, {useEffect} from 'react'
+import {Link, useLocation} from 'react-router-dom'
 import { LuBadgeCheck, LuClipboardList} from "react-icons/lu";
 import { HiOutlineDocumentSearch } from "react-icons/hi";
 import { GiSettingsKnobs } from "react-icons/gi";
+import { toast } from 'react-toastify';
 
 
 
 const HomePage = () => {
+    const location = useLocation();
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        if (searchParams.get("succes") === "true") {
+        toast.success('Je bent ingelogd, welkom!');
+        }
+    }, [location.search]);
   return (
         <>
             <div className="grid grid-cols-2 text-8xl gap-2">

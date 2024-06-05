@@ -14,7 +14,7 @@ export default {
         'rec-blue-dark': '#097f7c'
       },
       screens: {
-        'xs': '450px',
+        'xxs': '450px',
       }
     },
   },

@@ -251,12 +251,9 @@ const InspectiePage = () => {
             <input type="checkbox" id="inventarisatie" name="inventarisatie" className='mr-2'
               checked={inventarisatieGemeld}
               onChange={inventarisatieCheckHandler} />
-
             <label htmlFor="inventarisatie">Inventarisatie</label>
           </div>
         </fieldset>
-
-        {/* Schade Formulier */}
         {schadeGemeld ? <SchadeForm
           schadeNieuw={schadeNieuw} handleSchadeNieuw={handleSchadeNieuw}
           schadeLocatie={schadeLocatie} handleSchadeLocatie={handleSchadeLocatie}
@@ -267,7 +264,6 @@ const InspectiePage = () => {
           schadeDatum={schadeDatum} handleSchadeDatum={handleSchadeDatum}
           imageSchadeHandler={imageSchadeHandler} removeSchadeImage = {removeSchadeImage}
         /> : <></>}
-
         {onderhoudGemeld ? <OnderhoudForm
           onderhoudLocatie={onderhoudLocatie} handleOnderhoudLocatie={handleOnderhoudLocatie}
           onderhoudSoort={onderhoudSoort} handleOnderhoudSoort={handleOnderhoudSoort}

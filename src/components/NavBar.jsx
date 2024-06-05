@@ -10,11 +10,10 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-around p-1 md:items-center text-4xl md:text-5xl md:m-auto">
-        {/* <NavLink to='/checks' className= {({isActive})} => isActive ? '"p-4 md:mr-10  text-white"' : '"p-4 md:mr-10  text-black'><LuBadgeCheck /></NavLink> */}
-        <NavLink className={linkClass} to='/app/inspecties'><LuBadgeCheck/></NavLink>
-        <NavLink className={linkClass} to='/app/oude-inspecties'><LuClipboardList /></NavLink>
-        <NavLink className={linkClass} to='/app/kennisbank'><HiOutlineDocumentSearch /></NavLink>
-        <NavLink className={linkClass} to='/app/settings'><GiSettingsKnobs /></NavLink>
+      <NavLink className={linkClass} to='/app/inspecties'><LuBadgeCheck/></NavLink>
+      <NavLink className={linkClass} to='/app/oude-inspecties'><LuClipboardList /></NavLink>
+      <NavLink className={linkClass} to='/app/kennisbank'><HiOutlineDocumentSearch /></NavLink>
+      <NavLink className={linkClass} to='/app/settings'><GiSettingsKnobs /></NavLink>
     </div>
   )
 }

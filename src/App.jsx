@@ -18,47 +18,47 @@ import EditSettingsPage from './pages/EditSettingsPage';
 import LoginPage from './pages/LoginPage';
 
 
+
 const App = () => {
 
 
-    // Setting up Local Storage
-    localStorage.setItem("name", "John Doe");  
-    localStorage.setItem("email", "johndoe@gmail.com"); 
-    localStorage.setItem("wachtwoord", "Johnspassword"); 
-    localStorage.setItem("melding", true); 
-    localStorage.setItem("2fa", true); 
-    localStorage.setItem("tfa-code", 4224);
-    localStorage.setItem("modus", "licht"); 
-    localStorage.setItem("avatar", "/images/inspecteur.jpg"); 
+  localStorage.setItem("name", "John Doe");  
+  localStorage.setItem("email", "johndoe@gmail.com"); 
+  localStorage.setItem("wachtwoord", "Johnspassword"); 
+  localStorage.setItem("melding", true); 
+  localStorage.setItem("2fa", true); 
+  localStorage.setItem("tfa-code", 4224);
+  localStorage.setItem("modus", "licht"); 
+  localStorage.setItem("avatar", "/images/inspecteur.jpg"); 
   
   const routesJSX = [
     (
-              <Route path='/' element = {<HomeLayout/>}>
-                <Route index element={<HomePage/>}/>
-                <Route path='*' element={<NotFoundPage />} />
-              </Route>
+      <Route path='/' element = {<HomeLayout/>}>
+        <Route index element={<HomePage/>}/>
+        <Route path='*' element={<NotFoundPage />} />
+      </Route>
     ),
     (
-              <Route path='/app' element = {<MainLayout />}>
-                <Route path='/app/inspecties' element={<InspectiesPage />} />
-                <Route path='/app/inspectie/:id' element={<InspectiePage/>}/>
-                <Route path='/app/blogs/:id' element={<BlogPage/>} />
-                <Route path='/app/edit-inspecties/:id' element={<EditInspectiePage/>}/>
-                <Route path='/app/oude-inspecties' element={<OudeInspectiesPage />} />
-                <Route path='/app/view-inspectie/:id' element={<ViewInspectiePage/>}/>
-                <Route path='/app/kennisbank' element={<KennisBankPage/>} />
-                <Route path='/app/settings' element={<SettingsPage />} />
-                <Route path='/app/edit-settings' element={<EditSettingsPage />} />
-                <Route path='/app/search' element={<SearchPage />} />
-                <Route path='/app/*' element={<NotFoundPage />} />
-            </Route>
+      <Route path='/app' element = {<MainLayout />}>
+        <Route path='/app/inspecties' element={<InspectiesPage />} />
+        <Route path='/app/inspectie/:id' element={<InspectiePage/>}/>
+        <Route path='/app/blogs/:id' element={<BlogPage/>} />
+        <Route path='/app/edit-inspecties/:id' element={<EditInspectiePage/>}/>
+        <Route path='/app/oude-inspecties' element={<OudeInspectiesPage />} />
+        <Route path='/app/view-inspectie/:id' element={<ViewInspectiePage/>}/>
+        <Route path='/app/kennisbank' element={<KennisBankPage/>} />
+        <Route path='/app/settings' element={<SettingsPage />} />
+        <Route path='/app/edit-settings' element={<EditSettingsPage />} />
+        <Route path='/app/search' element={<SearchPage />} />
+        <Route path='/app/*' element={<NotFoundPage />} />
+    </Route>
 
     ), (
-              <Route path='/login' element = {<LoginLayout />}>
-                <Route index element={<LoginPage />}/>
-                <Route path='/login/2fa' element={<TwoFactorPage/>}/>
-              </Route>
-    )
+        <Route path='/login' element = {<LoginLayout />}>
+          <Route index element={<LoginPage />}/>
+          <Route path='/login/2fa' element={<TwoFactorPage/>}/>
+        </Route>
+      )
   ]
 
 

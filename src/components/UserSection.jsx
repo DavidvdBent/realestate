@@ -24,26 +24,24 @@ const UserSection = () => {
   return (
     <div>
         <div className="mt-8 border-t-2 flex justify-between p-2">
-                <p className="mt-2 p-2">Welkom Mr  <Link to="/app/settings"><span className="text-rec-blue font-medium hover:text-rec-blue-dark">{userName}</span></Link>!</p>
-                <div className="flex text-gray-600">
-                    <button>
-                        <Link to="/app/search">
-                    <CiSearch className='m-auto text-3xl mr-2 hover:text-gray-400'/>    
-                        </Link>
-                    
-                    </button>
-                    <button onClick={handleSound}>
-                        {localStorage.getItem('melding') === 'true'? (
-                            <CiBellOn className='m-auto text-3xl mr-2 hover:text-gray-400 '/>
-                        ) : (
-                            <CiBellOff className='m-auto text-3xl mr-2 hover:text-gray-400'/>
-                        )}
-                    
-                    </button>
-                    <button onClick={handleLogOut} >
-                        <IoLogInOutline  className='m-auto text-3xl mr-2 hover:text-gray-400'/>
-                    </button>
-                </div>
+            <p className="mt-2 p-2">Welkom Mr  <Link to="/app/settings"><span className="text-rec-blue font-medium hover:text-rec-blue-dark">{userName}</span></Link>!</p>
+            <div className="flex text-gray-600">
+                <button>
+                    <Link to="/app/search">
+                        <CiSearch className='m-auto text-3xl mr-2 hover:text-gray-400'/>    
+                    </Link>
+                </button>
+                <button onClick={handleSound}>
+                    {localStorage.getItem('melding') === 'true'? (
+                        <CiBellOn className='m-auto text-3xl mr-2 hover:text-gray-400 '/>
+                    ) : (
+                        <CiBellOff className='m-auto text-3xl mr-2 hover:text-gray-400'/>
+                    )}
+                </button>
+                <button onClick={handleLogOut} >
+                    <IoLogInOutline  className='m-auto text-3xl mr-2 hover:text-gray-400'/>
+                </button>
+            </div>
         </div>
     </div>
   )
