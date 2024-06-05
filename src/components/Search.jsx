@@ -1,11 +1,11 @@
 import { useState } from "react"
 
 const Search = ({ onChangeCallback }) => {
-const [value, setValue] = useState('')
+const [query, setQuery] = useState('')
 
-  const handleChange = (e) => {
+  const handleSearch = (e) => {
     const inputValue = e.target.value;
-    setValue(inputValue)
+    setQuery(inputValue)
     onChangeCallback && onChangeCallback(inputValue)
   }
 
@@ -13,8 +13,8 @@ const [value, setValue] = useState('')
     <input
       type="text"
       className="border-2 h-10 w-2/3 m-auto rounded-l mt-2 mb-2 pl-2"
-      value={value}
-      onChange={handleChange}
+      value={query}
+      onChange={handleSearch}
       placeholder='Zoek op Adres'
     />
   )
