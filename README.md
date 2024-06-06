@@ -27,5 +27,5 @@ Hierin word de inspecteur verwelkomt, en kan je de meldingen aan/uit zetten, je 
 ## Navbar & Footer 
 Deze linken allemaal naar dezelfde pagina's, alleen is de footer met geschreven tekst en de navbar alleen met iconen. Hierdoor kan de inspecteur ook zijn weg vinden zonder de kennis te hebben van de iconen.
 
-#Verantwoording
+# Verantwoording
 
