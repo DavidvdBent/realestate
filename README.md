@@ -5,6 +5,8 @@ In deze app kunnen ze inspecties starten,invoeren en opsturen zodat deze kunnen 
 
 In de app kan je naast nieuwe inspecties uitvoeren ook oude inspecties bekijken of bewerken, de kennisbank raadplegen en de instellingen van jouw (de inspecteur) aanpassen.
 
+De applicatie is gemaakt in React met Tailwind, React Router, React Query & Axios.
+
 ## Inspecties
 
 Als je een toegewezen inspectie gaat invullen, kan je kiezen en of wisselen tussen de redenen van komst. Dit is bijvoorbeeld handig als een inspecteur schade wilt opnemen maar dat hij gelijk onderhoud bij een ander deel van het pand opmerkt. Het formulier is verder in te vullen op verschillende punten zoals dropdown menu's voor de prijs, of radio-buttons om de urgentie te bepalen en pdf bestanden uploaden. Verder kan de inspecteur aan elke reden van bezoek meerdere foto's toevoegen en die gelijk bekijken. Mocht de inspecteur deze foto's willen verwijderen dan kan hij op de desbetreffende afbeelding klikken.
