@@ -19,7 +19,7 @@ Hierin zijn artikelen te vinden die de inspecteurs kunnen raadplegen bij vragen 
 
 ## instellingen
 
-De instellingen van de inspecteur zijn hier in aan te passen, zoals de naam, de avatar maar ook de Two Factor Authenthication. De aanpassingen veranderen tijdelijk de localstorage. Hierdoor word je naam bijvoorbeeld aangepast in de app maar tijdens een refresh veranderd het weer.
+De instellingen van de inspecteur zijn hier in aan te passen, zoals de naam, de avatar maar ook de Two Factor Authenthication. De aanpassingen veranderen tijdelijk de localstorage. Hierdoor word je naam bijvoorbeeld aangepast in de app maar tijdens een refresh veranderd het weer. Om in te loggen kan je de gegevens vinden in de localstorage van je browser, zoals het wachtwoord, email & 2fa code. Dit kan je ook aanpassen in de instellingen.
 
 ## UserSection
 Hierin word de inspecteur verwelkomt, en kan je de meldingen aan/uit zetten, je kan uitloggen maar je kan ook naar de search/zoek pagina gaan, waarin je kan zoeken op het adres door alle inspecties (Nieuw & Oud)
