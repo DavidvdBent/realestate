@@ -9,7 +9,7 @@ De applicatie is gemaakt in React met Tailwind, React Router, React Query & Axio
 
 ## Inspecties
 
-Als je een toegewezen inspectie gaat invullen, kan je kiezen en of wisselen tussen de redenen van komst. Dit is bijvoorbeeld handig als een inspecteur schade wilt opnemen maar dat hij gelijk onderhoud bij een ander deel van het pand opmerkt. Het formulier is verder in te vullen op verschillende punten zoals dropdown menu's voor de prijs, of radio-buttons om de urgentie te bepalen en pdf bestanden uploaden. Verder kan de inspecteur aan elke reden van bezoek meerdere foto's toevoegen en die gelijk bekijken. Mocht de inspecteur deze foto's willen verwijderen dan kan hij op de desbetreffende afbeelding klikken.
+Als je een toegewezen inspectie gaat invullen, kan je kiezen en of wisselen tussen de redenen van komst. Dit is bijvoorbeeld handig als een inspecteur schade wilt opnemen maar dat hij gelijk onderhoud bij een ander deel van het pand opmerkt. Het formulier is verder in te vullen op verschillende punten zoals dropdown menu's voor de prijs, of radio-buttons om de urgentie te bepalen. Verder kan de inspecteur aan elke reden van bezoek meerdere foto's toevoegen en die gelijk bekijken. Mocht de inspecteur deze foto's willen verwijderen dan kan hij op de desbetreffende afbeelding klikken.
 
 Reeds ingevoerde inspecties kunnen worden bekeken en of bewerkt. Tijdens het bekijken van een inspectie kan je de foto's terug zien en bijvoorbeeld het pdf bestand downloaden (mits die aanwezig is) Hierna kan je een inspectie nog steeds bewerken. 
 
